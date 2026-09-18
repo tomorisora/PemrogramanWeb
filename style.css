@@ -69,17 +69,19 @@ footer {
   color: white;
 }
 
-/* --- Jadwal Pelajaran --- */
+/* --- Jadwal Kuliah --- */
 table {
   width: 100%;
   border-collapse: collapse;
   background-color: white;
+  table-layout: fixed;
 }
 
 th, td {
   border: 1px solid #dddddd;
   padding: 10px;
   text-align: center;
+  vertical-align: top;
 }
 
 th {
@@ -87,8 +89,25 @@ th {
   color: white;
 }
 
-tr:nth-child(even) {
+.mk-item {
   background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mk-jam {
+  font-size: 12px;
+  color: #666666;
+}
+
+.mk-nama {
+  font-weight: bold;
+  color: #333333;
+  font-size: 14px;
 }
 
 /* --- Murid Kelas --- */
